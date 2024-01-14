@@ -1,5 +1,5 @@
 import Header from '../header/Header';
-import Task2 from '../task2/Task2';
+import ImageList from '../image-list';
 
 import styles from './App.module.scss';
 
@@ -16,7 +16,7 @@ const App: React.FC = () => {
     <>
       <Header />
       <main className={styles.main}>
-        <Task2 />
+        <ImageList />
       </main>
     </>
   );

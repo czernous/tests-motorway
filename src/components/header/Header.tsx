@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Logo from '../../assets/icons/logo.svg?react';
-import Task1 from '../task1/Task1';
+import Typeahead from '../typeahead';
 import HeaderLinks from './HeaderLinks';
 
 import styles from './Header.module.scss';
@@ -12,8 +12,8 @@ const Header: React.FC = () => {
       <div className={styles.logo}>
         <Logo />
       </div>
+      <Typeahead />
       <div className={styles.nav}>
-        <Task1 />
         <HeaderLinks />
       </div>
     </header>

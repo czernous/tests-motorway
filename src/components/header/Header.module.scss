@@ -7,14 +7,21 @@
   padding: core.$space * 3 core.$space * 6;
 
   .logo {
-    flex: 30;
+    // flex: 30;
     display: flex;
   }
 
   .nav {
-    flex: 70;
+    // flex: 70;
     display: flex;
     justify-content: flex-end;
     gap: core.$space * 6;
+  }
+
+  // stack items on smaller viewports
+  @media (max-width: 940px) {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
   }
 }
